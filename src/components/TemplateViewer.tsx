@@ -43,6 +43,24 @@ export const TemplateFrame: React.FC<TemplateViewerProps> = ({
 }) => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [currentUrl, setCurrentUrl] = useState(template.url)
+  const [attemptedFallback, setAttemptedFallback] = useState(false)
+
+  const handleIframeError = () => {
+    setLoading(false)
+    
+    // If we haven't tried fallback yet and current URL is direct path
+    if (!attemptedFallback && template.url.startsWith('/')) {
+      setAttemptedFallback(true)
+      // Try API endpoint as fallback
+      setCurrentUrl(`/api/template?url=${encodeURIComponent(template.url)}`)
+      setError(null)
+      setLoading(true)
+    } else {
+      setError('Could not load template')
+      console.error('Failed to load template:', template.url)
+    }
+  }
 
   return (
     <div className="template-frame-container">
@@ -65,23 +83,24 @@ export const TemplateFrame: React.FC<TemplateViewerProps> = ({
         {error && (
           <div className="template-error">
             <p>Error loading template: {error}</p>
+            <p style={{ fontSize: '12px', color: '#666', margin: '8px 0' }}>
+              Trying to open in new tab...
+            </p>
             <TemplateLink template={template} />
           </div>
         )}
 
-        <iframe
-          key={template.id}
-          src={template.url}
-          title={template.title}
-          className="template-iframe"
-          onLoad={() => setLoading(false)}
-          onError={(e) => {
-            setLoading(false)
-            setError('Could not load template in iframe')
-            console.error('iframe error:', e)
-          }}
-          sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-presentation"
-        />
+        {!error && (
+          <iframe
+            key={`${template.id}-${currentUrl}`}
+            src={currentUrl}
+            title={template.title}
+            className="template-iframe"
+            onLoad={() => setLoading(false)}
+            onError={handleIframeError}
+            sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-presentation"
+          />
+        )}
       </div>
 
       <div className="template-frame-footer">

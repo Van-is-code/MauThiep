@@ -3,74 +3,74 @@
     {
       "id": 1,
       "title": "T01",
-      "url": "\\public\\templates\\T01\\jmiiwedding.com\\dathaaaaa\\index.html",
-      "image": "\\public\\images\\T01.png"
+      "url": "/templates/T01/jmiiwedding.com/dathaaaaa/index.html",
+      "image": "/images/T01.png"
     },
     {
       "id": 2,
       "title": "T02",
-      "url": "\\public\\templates\\T02\\invitations.jmiiwedding.com\\dohaa.html",
-      "image": "\\public\\images\\T02.png"
+      "url": "/templates/T02/invitations.jmiiwedding.com/dohaa.html",
+      "image": "/images/T02.png"
     },
     {
       "id": 3,
       "title": "T03",
-      "url": "\\public\\templates\\T03\\camcui.vn\\thhwedding\\index.html",
-      "image": "\\public\\images\\T03.png"
+      "url": "/templates/T03/camcui.vn/thhwedding/index.html",
+      "image": "/images/T03.png"
     },
     {
       "id": 4,
       "title": "T04",
-      "url": "\\public\\templates\\T04\\jmiiwedding.com\\hoanglyyy\\index.html",
-      "image": "\\public\\images\\T04.png"
+      "url": "/templates/T04/jmiiwedding.com/hoanglyyy/index.html",
+      "image": "/images/T04.png"
     },
     {
       "id": 5,
       "title": "T05",
-      "url": "\\public\\templates\\T05\\camcui.vn\\sonphuonganhwedding\\index.html",
-      "image": "\\public\\images\\T05.png"
+      "url": "/templates/T05/camcui.vn/sonphuonganhwedding/index.html",
+      "image": "/images/T05.png"
     },
     {
       "id": 6,
       "title": "T06",
-      "url": "\\public\\templates\\T06\\invitations.jmiiwedding.com\\redtone.html",
-      "image": "\\public\\images\\T06.png"
+      "url": "/templates/T06/invitations.jmiiwedding.com/redtone.html",
+      "image": "/images/T06.png"
     },
     {
       "id": 7,
       "title": "T07",
-      "url": "\\public\\templates\\T07\\camcui.vn\\linhvinhwedding\\index.html",
-      "image": "\\public\\images\\T07.png"
+      "url": "/templates/T07/camcui.vn/linhvinhwedding/index.html",
+      "image": "/images/T07.png"
     },
     {
       "id": 8,
       "title": "T08",
-      "url": "\\public\\templates\\T08\\jmiiwedding.com\\airportthiep\\index.html",
-      "image": "\\public\\images\\T08.png"
+      "url": "/templates/T08/jmiiwedding.com/airportthiep/index.html",
+      "image": "/images/T08.png"
     },
-      {
-        "id": 9,
-        "title": "T09",
-        "url": "\\public\\templates\\T09\\jmiiwedding.com\\mimimau\\index.html",
-        "image": "\\public\\images\\T09.png"
-      },
-      {
-        "id": 10,
-        "title": "T10",
-        "url": "\\public\\templates\\T10\\jmiiwedding.com\\trangmaauuuu\\index.html",
-        "image": "\\public\\images\\T10.png"
-      },
-      {
-        "id": 11,
-        "title": "T11",
-        "url": "\\public\\templates\\T11\\camcui.vn\\trilyy\\index.html",
-        "image": "\\public\\images\\T11.png"
-      },
-      {
-        "id": 12,
-        "title": "T12",
-        "url": "\\public\\templates\\T12\\camcui.vn\\anhquann\\index.html",
-        "image": "\\public\\images\\T12.png"
-      }
+    {
+      "id": 9,
+      "title": "T09",
+      "url": "/templates/T09/jmiiwedding.com/mimimau/index.html",
+      "image": "/images/T09.png"
+    },
+    {
+      "id": 10,
+      "title": "T10",
+      "url": "/templates/T10/jmiiwedding.com/trangmaauuuu/index.html",
+      "image": "/images/T10.png"
+    },
+    {
+      "id": 11,
+      "title": "T11",
+      "url": "/templates/T11/camcui.vn/trilyy/index.html",
+      "image": "/images/T11.png"
+    },
+    {
+      "id": 12,
+      "title": "T12",
+      "url": "/templates/T12/camcui.vn/anhquann/index.html",
+      "image": "/images/T12.png"
+    }
   ]
 }
